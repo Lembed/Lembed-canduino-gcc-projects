@@ -12,6 +12,8 @@
 #ifndef _EEPROM_H
 #define _EEPROM_H
 
+#include <avr/io.h>
+
 //
 //	Read a single byte of data from EEPROM address `address'.
 //
@@ -21,7 +23,7 @@
 uint8_t
 eeprom_read
 (
-	uint16_t	address
+    uint16_t	address
 );
 
 //
@@ -33,8 +35,8 @@ eeprom_read
 void
 eeprom_write
 (
-	uint16_t	address,
-	uint8_t		data
+    uint16_t	address,
+    uint8_t		data
 );
 
 //
@@ -48,9 +50,9 @@ eeprom_write
 void
 eeprom_read_many
 (
-	uint16_t	address,
-	uint8_t		*data,
-	uint8_t		n
+    uint16_t	address,
+    uint8_t		*data,
+    uint8_t		n
 );
 
 //
@@ -64,9 +66,9 @@ eeprom_read_many
 void
 eeprom_write_many
 (
-	uint16_t	address,
-	uint8_t		*data,
-	uint8_t		n
+    uint16_t	address,
+    uint8_t		*data,
+    uint8_t		n
 );
 
 #endif

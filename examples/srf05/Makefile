@@ -41,7 +41,7 @@
 
 
 # MCU name
-MCU = atmega644
+MCU = at90can128
 
 
 # Processor frequency.
